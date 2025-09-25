@@ -15,7 +15,6 @@ The tests cover the following scenarios:
 
 Clone the repo (or download ZIP) and navigate to the project folder:
 
-cd cypress-e2e
 
 
 Install dependencies:

@@ -1,25 +1,62 @@
-# Cypress E2E Tests – Saucedemo
+saucelab_assignment
+Cypress E2E Tests – Saucedemo
 
-This repo contains 3 Cypress test cases for [Saucedemo](https://www.saucedemo.com/):
+This repository contains end-to-end (E2E) Cypress test cases for Saucedemo
 
-1. ✅ Successful login with valid credentials  
-2. ✅ Add product to cart and verify  
-3. ✅ Complete checkout and confirm order  
+The tests cover the following scenarios:
 
-## Setup
+✅ Successful login with valid credentials
 
-1. Install dependencies
+✅ Add product to cart and verify it appears in the cart
+
+✅ Complete checkout and verify order confirmation
+
+🚀 Project Setup
+
+Clone the repo (or download ZIP) and navigate to the project folder:
+
+cd cypress-e2e
+
+Install dependencies:
 
 npm install
-Run tests with Cypress Test Runner
 
+Open Cypress Test Runner:
 
-2. npx cypress open
-3. Go to Spec folder in Chrome runner where you will see the all 3 js files
-4. One by one you can run the code and debug
-You can also see the error/shape of the UI by hovering on code steps 
+npx cypress open
 
-Notes:
-1. For testing purpose and due to short version of assignment user credentials are hardcoded but for better code maintenance this can go to config file.
-2. No other framework like POM and Cucumber are used due to time crunch.
+Run the tests:
 
+In the Cypress Chrome runner, go to the Spec folder.
+
+You will see all three test files (login.cy.js, cart.cy.js, checkout.cy.js).
+
+Click on each test file to run it individually.
+
+Debugging tips:
+
+Hover over steps in the Cypress runner to see UI snapshots for each test step.
+
+Errors and failed assertions are clearly highlighted for quick debugging.
+
+⚙️ Notes
+
+For simplicity and testing purposes, the user credentials are hardcoded:
+
+Username: standard_user
+
+Password: secret_sauce
+
+For better maintainability, credentials can be moved to config files or environment variables.
+
+No additional frameworks (like Page Object Model or Cucumber) were used due to time constraints.
+
+Cypress automatically handles waiting, retries, and assertions, making tests reliable and easy to maintain.
+
+✅ Tech Stack
+
+Cypress – End-to-end testing framework
+
+JavaScript – Test scripts
+
+Node.js – Dependency management
